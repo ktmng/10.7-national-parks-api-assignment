@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Park Finder</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="instructions">
+    <h1 id="title">Assignment Requirements</h1>
+    <ul>
+      <li>The user must be able to search for parks in one or more states.</li>
+      <li>The user must be able to set the max number of results, with a default of 10.</li>
+      <li>The search must trigger a call to NPS's API.</li>
+      <li>The parks in the given state must be displayed on the page. Include at least:
+      <ol>
+        <li>Full name</li>
+        <li>Description</li>
+        <li>Website URL</li>
+      </ol>
+      </li>
+      <li>The user must be able to make multiple searches and see only the results for the current search.</li>
+      <li>As a stretch goal, try adding the park's address to the results.</li>
+    </ul>
+  </div> 
+
+  <div class="container">
+    <h2>Find National Parks</h2>
+
+    <form id="js-form">
+      <label class="search-term" for="search-term">Search by State Postal Code</label>
+        <p class="search-term details">*Use 2 Letters Only
+        <br>
+        (<a href="https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations" target="_blank">State Abbreviation List</a>)
+        </p>
+      <input class="search-term input" type="text" name="search-term" id="js-search-term" placeholder="CA" required>
+
+      <label class="max-results" for="max-results">Maximum Results</label>
+      <input class="max-results input" type="number" name="max-results" id="js-max-results" value="10" min="1">
+
+      <input id="submit-btn" type="submit" value="Find Parks!">
+    </form>
+
+    <p id="js-error-message" class="error-message"></p>
+    
+    <section id="wait-msg" class="hidden">
+      <p>Please Wait, This API is Slow AF</p>
+    </section>
+
+    <section id="results" class="hidden">
+      <h2 id="results-for-state"></h2>
+        <ul id="results-list">
+        </ul>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

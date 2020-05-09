@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  .instructions {
+    color: rgb(118, 118, 118);
+    font-size: 16px;
+  }
+  #title {
+    font-size: 16px;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #js-form {
+    border: 2px grey solid;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+  .search-term, .max-results {
+   font-size: 20px;
+   margin: 2px;
+   width: 85%;
+  }
+  .search-term.input {
+    margin-bottom: 20px;
+  }
+  .search-term.details{
+    color: grey;
+  }
+  .max-results.input {
+    margin-bottom: 30px;
+  }
+  #submit-btn{
+    font-size: 18px;
+  }
+  #submit-btn:hover{
+    cursor: pointer;
+  }
+  
+  
+  #wait-msg {
+    font-size: 20px;
+    color: rgb(57, 115, 214);
+  }
+  
+  
+  #results-list {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .each-park-result {
+    border: 2px grey solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 75%;
+  }
+  .park-name {
+    margin: 5px 0px 5px 0px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .park-img {
+    width: 35%;
+    display: block;
+    margin: 15px auto 0px auto;
+  }
+  .park-description {
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  a:link {
+    color: rgb(42, 103, 156);
+  }
+  a:visited {
+    color: rgb(67, 42, 156);
+  }
+  a:hover {
+    font-weight: bold
+  }
